@@ -1,0 +1,34 @@
+{
+  "name": "pagebuilder",
+  "version": "1.0.0",
+  "description": "site constructor on clear javascript",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "serve": "webpack-dev-server --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R1ankeel/pagebuilder.git"
+  },
+  "keywords": [
+    "js",
+    "pagebuilder",
+    "constructor"
+  ],
+  "author": "R1an <r1ankeel@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R1ankeel/pagebuilder/issues"
+  },
+  "homepage": "https://github.com/R1ankeel/pagebuilder#readme",
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
