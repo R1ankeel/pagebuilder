@@ -1,31 +1,32 @@
 import image from './assets/img/conf.jpg'
-import {Block} from './classes/blocks'
+import {TitleBlock, ImageBlock, TextBlock, ColBlock} from './classes/blocks'
 
 const title = 'Пагебуилдер'
 const mainText = 'Это конструктор сайтов на чистом JavaScript'
 const col1 = 'Я сделяль'
 const col2 = 'но ето не точно'
+const textStyle = 'background: darkblue; ' +
+    'color: yellow; ' +
+    'background: linear-gradient(to bottom, #9d9ec1, #5b44cd);' +
+    'margin-top: 10px;' +
+    'text-align: center;' +
+    'padding-top: 5px;'
 
 export const model = [
-    new Block('title', title, {styles: 'background: linear-gradient(to right, #0319f1, #01eafc);' +
+    new TitleBlock(title, {styles: 'background: linear-gradient(to right, #0319f1, #01eafc);' +
             'color: #fff;' +
             'text-align: center;' +
             'padding: 10px;',
         tag: 'h2',}),
 
-    new Block('image', image, {imageStyles: 'max-width: 100%;',
+    new ImageBlock(image, {imageStyles: 'max-width: 100%;',
         styles: 'padding-top: 5px;'}),
 
-    new Block('text', mainText, {
-        styles: 'background: darkblue; ' +
-            'color: yellow; ' +
-            'background: linear-gradient(to bottom, #9d9ec1, #5b44cd);' +
-            'margin-top: 10px;' +
-            'text-align: center;' +
-            'padding-top: 5px;'
+    new TextBlock(mainText, {
+        styles: textStyle
     }),
 
-    new Block('textColumn', [
+    new ColBlock([
         col1,
         col2],
         {
