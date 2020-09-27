@@ -5,3 +5,7 @@ export function row(content, styles = '') {
 export function col(content) {
     return `<div class="col-sm">${content}</div>`
 }
+
+export function css() {
+
+}
