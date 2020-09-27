@@ -1,5 +1,6 @@
 import image from './assets/img/conf.jpg'
 import {TitleBlock, ImageBlock, TextBlock, ColBlock} from './classes/blocks'
+import {css} from "./utils";
 
 const title = 'Пагебуилдер'
 const mainText = 'Это конструктор сайтов на чистом JavaScript'
@@ -20,7 +21,10 @@ export const model = [
         tag: 'h2',}),
 
     new ImageBlock(image, {imageStyles: 'max-width: 100%;',
-        styles: 'padding-top: 5px;'}),
+        styles: css({
+            'padding-top': '5px',
+        })
+        }),
 
     new TextBlock(mainText, {
         styles: textStyle
